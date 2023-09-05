@@ -6,7 +6,7 @@ const loadData = () => JSON.parse(fs.readFileSync(dataFile));
 const getCollection = async(req, res)=>{
     try {
         const items = loadData();
-        // Implement pagination, filtering, and sorting here based on query parameters
+        
         res.json(items);
     } catch (error) {
         console.log(error);
